@@ -33,7 +33,7 @@ query {
       node {
         id
         title
-        postContext
+        category
         tags
         date (format: "MMM DD, YYYY")
         path

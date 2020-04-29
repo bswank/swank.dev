@@ -4,7 +4,7 @@
       <div class="time">
         <span>
           {{ $page.post.date
-          }}{{ $page.post.postContext ? ` / ${$page.post.postContext}` : '' }}
+          }}{{ $page.post.category ? ` / ${$page.post.category}` : '' }}
         </span>
       </div>
       <h1>
@@ -45,7 +45,7 @@ query Post ($path: String!) {
     id
     title
     content
-    postContext
+    category
     tags
     date (format: "MMMM DD, YYYY")
   }

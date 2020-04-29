@@ -2,7 +2,7 @@
   <div class="post">
     <div class="date">
       <span>
-        {{ post.date }}{{ post.postContext ? ` / ${post.postContext}` : '' }}
+        {{ post.date }}{{ post.category ? ` / ${post.category}` : '' }}
       </span>
     </div>
     <h2>
@@ -45,7 +45,6 @@ export default {
 
   h2 {
     flex: 1;
-    cursor: pointer;
     margin: 15px 0;
 
     &:hover {

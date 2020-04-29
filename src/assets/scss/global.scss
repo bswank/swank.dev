@@ -59,11 +59,11 @@ p:last-child {
 
 h1 {
   line-height: 1.4;
+  font-weight: 400;
+  color: var(--primary);
 
   span {
-    font-weight: 400;
     background-color: var(--accent);
-    color: var(--primary);
   }
 }
 
