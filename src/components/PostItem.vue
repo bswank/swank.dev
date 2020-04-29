@@ -2,7 +2,7 @@
   <div class="post">
     <div class="date">
       <span>
-        {{ post.date }}{{ post.category ? ` / ${post.category}` : '' }}
+        {{ post.date }}{{ post.category ? ` // ${post.category}` : '' }}
       </span>
     </div>
     <h2>
@@ -54,13 +54,13 @@ export default {
 
   .date {
     line-height: 1;
-    font-size: 0.8rem;
-    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   .tags {
     line-height: 1.1;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
   }
 }

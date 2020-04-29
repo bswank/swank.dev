@@ -4,7 +4,7 @@
       <div class="time">
         <span>
           {{ $page.post.date
-          }}{{ $page.post.category ? ` / ${$page.post.category}` : '' }}
+          }}{{ $page.post.category ? ` // ${$page.post.category}` : '' }}
         </span>
       </div>
       <h1>
@@ -55,8 +55,8 @@ query Post ($path: String!) {
 <style lang="scss" scoped>
 .time {
   margin-bottom: 15px;
-  text-transform: uppercase;
-  font-size: 0.8em;
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 h1 {
@@ -66,6 +66,6 @@ h1 {
 .tags {
   margin: 15px 0 var(--big-space) 0;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 </style>

@@ -86,6 +86,10 @@ ol + h2 {
   margin-top: var(--big-space);
 }
 
+pre {
+  margin: var(--little-space) 0;
+}
+
 a {
   color: var(--primary);
   text-decoration: none;
