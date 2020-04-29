@@ -11,7 +11,7 @@
       </g-link>
     </h2>
     <div class="tags">
-      <span>{{ post.tags }}</span>
+      <span>{{ tags }}</span>
     </div>
   </div>
 </template>
@@ -26,8 +26,13 @@ export default {
       required: true
     }
   },
+  data() {
+    return {
+      tags: ''
+    }
+  },
   created() {
-    this.post.tags = formatList(this.post.tags)
+    this.tags = formatList(this.post.tags)
   }
 }
 </script>

@@ -11,7 +11,7 @@
         <span>{{ $page.post.title }}</span>
       </h1>
       <div class="tags">
-        <span>{{ $page.post.tags }}</span>
+        <span>{{ tags }}</span>
       </div>
       <div class="content" v-html="content" />
     </article>
@@ -27,8 +27,13 @@ export default {
       title: this.$page.post.title
     }
   },
+  data() {
+    return {
+      tags: ''
+    }
+  },
   created() {
-    this.$page.post.tags = formatList(this.$page.post.tags)
+    this.tags = formatList(this.$page.post.tags)
     this.content = alterHeadings(this.$page.post.content)
   }
 }
