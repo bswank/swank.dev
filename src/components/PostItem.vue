@@ -10,7 +10,7 @@
         <span>{{ post.title }}</span>
       </g-link>
     </h2>
-    <div class="tags">
+    <div v-if="tags" class="tags">
       <span>{{ tags }}</span>
     </div>
   </div>

@@ -11,7 +11,7 @@
         <span>{{ $page.post.title }}</span>
       </h1>
       <div class="tags">
-        <span>{{ tags }}</span>
+        <span v-if="tags">{{ tags }}</span>
       </div>
       <div class="content" v-html="content" />
     </article>
