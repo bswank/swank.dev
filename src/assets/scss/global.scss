@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;600;700&display=swap');
+
+:root {
+  // Spacing
+  --big-space: 50px;
+  --little-space: 25px;
+
+  // Colors
+  --primary: #253745;
+  --alt: #ececec;
+  --accent: #facf90;
+
+  // Code syntax highlight colors
+  --syntax-b: #55456a;
+  --syntax-c: #265985;
+  --syntax-d: #80475e;
+  --syntax-e: #567666;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --big-space: 30px;
+    --little-space: 15px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background-color: #dcdcdc !important;
+}
+
+*::selection {
+  background-color: #dcdcdc !important;
+}
+
+body {
+  font-family: 'Overpass Mono', monospace;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  color: var(--primary);
+  background-color: var(--accent);
+}
+
+h1:first-child,
+h2:first-child,
+p:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  line-height: 1.4;
+
+  span {
+    font-weight: 400;
+    background-color: var(--accent);
+    color: var(--primary);
+  }
+}
+
+h2 {
+  line-height: 1.5;
+  font-weight: 600;
+
+  span {
+    background-color: var(--primary);
+    color: var(--alt);
+  }
+}
+
+p + h1,
+ul + h1,
+ol + h1,
+p + h2,
+ul + h2,
+ol + h2 {
+  margin-top: var(--big-space);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  font-size: 1.05em;
+}
+
+p a,
+:not(nav) > ul a,
+:not(nav) > ol a {
+  color: var(--primary);
+  background-color: var(--accent);
+}
+
+:not(nav) > ul > li + li {
+  margin-top: var(--little-space);
+}
+
+img {
+  max-width: 100%;
+}

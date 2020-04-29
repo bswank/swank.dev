@@ -1,0 +1,32 @@
+{
+  "name": "swank.dev",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "explore": "gridsome explore",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@gridsome/remark-prismjs": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.5.0",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-feed": "^1.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.3.1",
+    "@vue/cli-service": "^4.3.1",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-gridsome": "^1.4.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^7.0.0-alpha.1",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "vue-eslint-parser": "^7.0.0"
+  }
+}
