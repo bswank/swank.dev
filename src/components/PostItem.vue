@@ -12,9 +12,7 @@
       </g-link>
     </h2>
     <div class="tags">
-      <span>{{
-        new Intl.ListFormat('en', { style: 'short' }).format(post.tags)
-      }}</span>
+      <span>{{ post.tags }}</span>
     </div>
   </div>
 </template>
@@ -26,6 +24,11 @@ export default {
       type: Object,
       required: true
     }
+  },
+  created() {
+    this.post.tags = new Intl.ListFormat('en', { style: 'short' }).format(
+      this.post.tags
+    )
   }
 }
 </script>

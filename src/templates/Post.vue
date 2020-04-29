@@ -13,9 +13,7 @@
         <span>{{ $page.post.title }}</span>
       </h1>
       <div class="tags">
-        <span>{{
-          new Intl.ListFormat('en', { style: 'short' }).format($page.post.tags)
-        }}</span>
+        <span>{{ $page.post.tags }}</span>
       </div>
       <div class="content" v-html="content" />
     </article>
@@ -30,6 +28,10 @@ export default {
     }
   },
   created() {
+    this.$page.post.tags = new Intl.ListFormat('en', { style: 'short' }).format(
+      this.$page.post.tags
+    )
+
     this.content = this.$alterHeadings(this.$page.post.content)
   }
 }
