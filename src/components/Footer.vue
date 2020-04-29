@@ -1,6 +1,11 @@
 <template>
   <footer>
-    <span>&copy; 2020 Brian Swank</span>
+    <span>
+      &copy; 2020 Brian Swank -
+      <a target="_blank" href="https://github.com/bswank/swank.dev">
+        GitHub
+      </a>
+    </span>
   </footer>
 </template>
 
