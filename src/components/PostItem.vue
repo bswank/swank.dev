@@ -1,10 +1,9 @@
 <template>
   <div class="post">
     <div class="date">
-      <span
-        >{{ post.date
-        }}{{ post.postContext ? ` / ${post.postContext}` : '' }}</span
-      >
+      <span>
+        {{ post.date }}{{ post.postContext ? ` / ${post.postContext}` : '' }}
+      </span>
     </div>
     <h2>
       <g-link :to="post.path" class="title">
@@ -18,6 +17,8 @@
 </template>
 
 <script>
+import { formatList } from '@/utils/utils'
+
 export default {
   props: {
     post: {
@@ -26,9 +27,7 @@ export default {
     }
   },
   created() {
-    this.post.tags = new Intl.ListFormat('en', { style: 'short' }).format(
-      this.post.tags
-    )
+    this.post.tags = formatList(this.post.tags)
   }
 }
 </script>

@@ -2,12 +2,10 @@
   <Layout>
     <article>
       <div class="time">
-        <span
-          >{{ $page.post.date
-          }}{{
-            $page.post.postContext ? ` / ${$page.post.postContext}` : ''
-          }}</span
-        >
+        <span>
+          {{ $page.post.date
+          }}{{ $page.post.postContext ? ` / ${$page.post.postContext}` : '' }}
+        </span>
       </div>
       <h1>
         <span>{{ $page.post.title }}</span>
@@ -21,6 +19,8 @@
 </template>
 
 <script>
+import { alterHeadings, formatList } from '@/utils/utils'
+
 export default {
   metaInfo() {
     return {
@@ -28,11 +28,8 @@ export default {
     }
   },
   created() {
-    this.$page.post.tags = new Intl.ListFormat('en', { style: 'short' }).format(
-      this.$page.post.tags
-    )
-
-    this.content = this.$alterHeadings(this.$page.post.content)
+    this.$page.post.tags = formatList(this.$page.post.tags)
+    this.content = alterHeadings(this.$page.post.content)
   }
 }
 </script>

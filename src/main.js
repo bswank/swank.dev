@@ -4,11 +4,9 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/scss/global.scss'
 import '~/assets/scss/syntax.scss'
-import { alterHeadings } from '~/utils/utils'
 
 export default function(Vue) {
   Vue.component('Layout', DefaultLayout)
-  Vue.prototype.$alterHeadings = alterHeadings
   Vue.mixin({
     data() {
       return {

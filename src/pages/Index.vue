@@ -5,12 +5,14 @@
 </template>
 
 <script>
+import { alterHeadings } from '@/utils/utils'
+
 export default {
   metaInfo: {
     title: 'Introductions'
   },
   created() {
-    this.content = this.$alterHeadings(this.$page.pageContent.content)
+    this.content = alterHeadings(this.$page.pageContent.content)
   }
 }
 </script>
