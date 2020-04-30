@@ -3,7 +3,7 @@
     <span>
       &copy; 2020 Brian Swank -
       <a target="_blank" href="https://github.com/bswank/swank.dev">
-        GitHub
+        Source
       </a>
     </span>
   </footer>
