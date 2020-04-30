@@ -4,7 +4,7 @@ id: 3e5vfzx
 
 # /uses
 
-Inspired by [Wes Bos](https://wesbos.com/amynswank) and his project, [uses.tech](https://uses.tech).
+Inspired by [Wes Bos](https://wesbos.com/) and his project, [uses.tech](https://uses.tech).
 
 ## Computer & Workspace
 
