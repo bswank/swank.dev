@@ -2,6 +2,7 @@
   <Layout>
     <article>
       <div class="time">
+        {{ $page.post.path }}
         <span>
           {{ $page.post.date
           }}{{ $page.post.category ? ` // ${$page.post.category}` : '' }}
@@ -24,7 +25,18 @@ import { alterHeadings, formatList } from '@/utils/utils'
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      description: this.$page.post.description,
+      meta: [
+        {
+          property: 'og:title',
+          content: `${this.$page.post.title} ${this.$page.post.tags.join(' ')}`
+        },
+        {
+          property: 'og:description',
+          content: this.$page.post.description
+        }
+      ]
     }
   },
   data() {
@@ -46,6 +58,7 @@ query Post ($path: String!) {
     title
     content
     category
+    description
     tags
     date (format: "MMMM DD, YYYY")
   }
@@ -64,8 +77,8 @@ h1 {
 }
 
 .tags {
+  line-height: 1.1;
   margin: 15px 0 var(--big-space) 0;
-  text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 </style>
