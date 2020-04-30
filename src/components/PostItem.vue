@@ -60,8 +60,7 @@ export default {
 
   .tags {
     line-height: 1.1;
-    font-size: 0.7rem;
-    text-transform: uppercase;
+    font-size: 0.8rem;
   }
 }
 </style>
