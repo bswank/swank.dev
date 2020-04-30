@@ -86,6 +86,23 @@ ol + h2 {
   margin-top: var(--big-space);
 }
 
+p + h3,
+ul + h3,
+ol + h3 {
+  margin-top: var(--little-space);
+}
+
+hr {
+  margin: var(--big-space) 0 0 0;
+  padding-top: var(--big-space);
+  border: none;
+  border-top: 1px dashed var(--primary);
+
+  & + * {
+    margin-top: 0;
+  }
+}
+
 pre {
   margin: var(--little-space) 0;
 }
@@ -111,7 +128,7 @@ p a,
 }
 
 :not(nav) > ul > li + li {
-  margin-top: var(--little-space);
+  margin-top: 12px;
 }
 
 img {
