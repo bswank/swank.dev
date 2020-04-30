@@ -3,6 +3,6 @@ export const alterHeadings = html => {
 }
 
 export const formatList = (list = [] /*style = 'short'*/) => {
-  return list.join('; ')
+  return list.join(' ')
   // return new Intl.ListFormat('en', { style }).format(list)
 }
