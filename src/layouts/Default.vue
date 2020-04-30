@@ -55,9 +55,4 @@ main {
     max-width: 1800px;
   }
 }
-
-section + section,
-article + article {
-  margin-top: var(--big-space);
-}
 </style>
