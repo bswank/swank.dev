@@ -21,7 +21,18 @@ export default {
     PostItem
   },
   metaInfo: {
-    title: 'Blog'
+    title: 'Weblog',
+    description: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`,
+    meta: [
+      {
+        property: 'og:title',
+        content: 'Weblog - Swank.dev'
+      },
+      {
+        property: 'og:description',
+        content: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`
+      }
+    ]
   }
 }
 </script>
