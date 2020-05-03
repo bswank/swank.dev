@@ -4,7 +4,7 @@ date: 2020-04-29
 slug: 'new-website'
 description: 'My very first blog post in which I write about why and how I finally coded up my own site.'
 category: 'Announcement'
-tags: ['#netlify', '#vue', '#gridsome', '#markdown']
+tags: ['#netlify', '#vue', '#gridsome', '#jamstack']
 ---
 
 Hey, thanks for reading my very first blog post in which I write about why and how I finally coded up my own site.
