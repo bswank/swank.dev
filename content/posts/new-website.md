@@ -15,7 +15,7 @@ If you're a web professional, or aspire to be one, you'll get used to answering 
 
 My LinkedIn profile served me well to help present potential employers with some basic facts about me and my experience, but as soon as I got hired at my current gig, I felt like I was finally at a point where I could ditch it. With some extra time on my hands and a renewed interest in starting to create content to help mentor aspiring developers, I decided it was time to whip something up!
 
-## Content is Key (or, maybe King?)
+## Content is Key
 
 I'm not so great at producing content. I tend to agonize over my creative process and then chicken out right before it's time to publish. I re-read and over-think and convince myself that my contribution is redundant or unnecessary.
 
