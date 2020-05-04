@@ -10,10 +10,10 @@ I'm a developer living in Lancaster, Pennsylvania – a cool little city in the 
 
 ## Work & Tech
 
-I work at [Spacebase](https://spacebaseapp.com) as a software engineer and I'm cooking up a few things on the side.
+I work at [Spacebase](https://spacebaseapp.com) as a software engineer and I'm cooking up a few things on the side. (EDIT: I just got laid off from Spacebase due to effects of COVID-19 and the shutdown, so I am now looking for my next role!)
 
 At work, I use Python & Django on AWS with PostgreSQL. When I'm not working, I write JavaScript with nifty tech like Netlify, Vue.js, AWS Lambda, and MongoDB.
 
 ## Reach Out
 
-You can get in touch by reaching out on [Twitter](https://twitter.com/briansw). I'm not currently looking for any new work.
+You can get in touch by reaching out on [Twitter](https://twitter.com/briansw). I'm currently looking for a new full-time gig!
