@@ -82,18 +82,18 @@ h3 {
 }
 
 p + h1,
+pre + h1,
 ul + h1,
 ol + h1,
 p + h2,
+pre + h2,
 ul + h2,
-ol + h2 {
-  margin-top: var(--big-space);
-}
-
+ol + h2,
 p + h3,
+pre + h3,
 ul + h3,
 ol + h3 {
-  margin-top: var(--little-space);
+  margin-top: var(--big-space);
 }
 
 hr {
