@@ -1,13 +1,9 @@
 [dev]
-  command = "npm run dev"
-  framework = "gridsome"
+  command = 'npm run dev'
+  framework = 'gridsome'
 
 [build]
-  publish = "dist"
-  command = "npm run build"
-  functions = "api/"
+  publish = 'dist'
+  command = 'npm run build'
+  functions = 'api/'
 
-[[redirects]]
-  from = "api/*"
-  to = ".netlify/functions/:splat"
-  status = 200
