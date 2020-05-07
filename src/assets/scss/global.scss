@@ -127,7 +127,8 @@ p a,
   background-color: var(--accent);
 }
 
-:not(nav) > ul > li + li {
+:not(nav) > ul > li + li,
+:not(nav) > ol > li + li {
   margin-top: 12px;
 }
 
