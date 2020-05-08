@@ -7,7 +7,7 @@ category: 'Tutorial'
 tags: ['#netlify', '#serverless', '#node']
 ---
 
-Adding just a bit of backend functionality to your Netlify-hosted static site is a perfect use-case for serverless functions. Let's get up and running.
+Adding just a bit of backend functionality to your Netlify-hosted static site is a perfect use-case for serverless functions. Let's get up and running!
 
 ## Why?
 
