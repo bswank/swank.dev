@@ -1,5 +1,5 @@
 ---
-title: 'Add Serverless Functions to any Static Site'
+title: 'Add Serverless Functions to Any Static Site'
 date: 2020-05-07
 slug: 'add-serverless-functions'
 description: 'Quickly add a serverless backend to any static site, including React, Vue, or other SPA static sites.'
