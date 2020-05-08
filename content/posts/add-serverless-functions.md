@@ -21,7 +21,7 @@ Let's connect our project to a Netlify and get set up using [Netlify Dev](https:
 
 1. Create a Netlify account if you don't have one already.
 2. Ensure you have the Netlify CLI installed locally. You can do this by running `npm i -g netlify-cli`. If you run into a permissions issue, check out the [NPM docs](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) on the issue.
-3. Authenticate your CLI to Netlify by running `netlify login`.
+3. Authenticate with Netlify by running `netlify login`.
 4. Initialize your Netlify project by running `netlify init`. This will create a site on Netlify and associate your project with that new site.
 
 ### Configure a Functions Directory
