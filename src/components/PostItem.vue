@@ -39,12 +39,9 @@ export default {
 
 <style lang="scss" scoped>
 .post {
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 
   h2 {
-    flex: 1;
     margin: 15px 0;
 
     &:hover {
