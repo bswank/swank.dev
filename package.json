@@ -13,14 +13,14 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
     "gridsome": "^0.7.14",
-    "gridsome-plugin-feed": "^1.0.2",
-    "normalize.css": "^8.0.1"
+    "gridsome-plugin-feed": "^1.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^4.3.1",
     "@vue/cli-service": "^4.3.1",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
+    "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-plugin-gridsome": "^1.4.1",
     "eslint-plugin-prettier": "^3.1.3",
