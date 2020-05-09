@@ -1,5 +1,5 @@
 import DefaultLayout from '~/layouts/Default.vue'
-import '@swankdev/design'
+import '@bswank/design'
 import '~/assets/scss/syntax.scss'
 
 export default function(Vue) {
