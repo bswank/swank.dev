@@ -64,10 +64,8 @@ exports.handler = async (event, context) => {
 1. Start your dev server by running `netlify dev`. You may need to [choose or configure](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#netlifytoml-dev-block) a start command.
 2. Visit [http://localhost:8888/.netlify/functions/testy](http://localhost:8888/.netlify/functions/testy)
 
-That's it! Need some help? Feel free to reach out.
-
 ---
 
-Thanks for reading! Hope this was helpful!
+Thanks for reading! Need some help? Feel free to [reach out](https://twitter.com/briansw).
 
 See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.dev/blob/master/content/posts/add-serverless-functions.md) on GitHub.
