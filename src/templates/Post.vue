@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { alterHeadings, formatList } from '@/utils/utils'
+import { processHeadings, formatList } from '@/utils/utils'
 
 export default {
   metaInfo() {
@@ -46,7 +46,7 @@ export default {
   },
   created() {
     this.tags = formatList(this.$page.post.tags)
-    this.content = alterHeadings(this.$page.post.content)
+    this.content = processHeadings(this.$page.post.content)
   }
 }
 </script>
