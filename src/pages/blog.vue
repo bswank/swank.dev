@@ -36,10 +36,9 @@ export default {
     }
   },
   created() {
-    console.log(process.env.NODE_ENV)
     this.posts = this.$page.allPost.edges
       .map(e => e.node)
-      .filter(e => new Date(e.date) <= new Date())
+      .filter(e => (this.prod ? new Date(e.date) <= new Date() : e))
   }
 }
 </script>

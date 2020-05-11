@@ -8,7 +8,8 @@ export default function(Vue) {
   Vue.mixin({
     data() {
       return {
-        content: ''
+        content: '',
+        prod: process.env.NODE_ENV === 'production'
       }
     }
   })
