@@ -56,7 +56,6 @@ query {
         path
       }
     }
-
   }
 }
 </page-query>
