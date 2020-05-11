@@ -1,0 +1,11 @@
+name: Rebuild
+on:
+  schedule:
+    - cron: '0 9 * * *'
+jobs:
+  build:
+    name: Request Netlify Webhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} ${{ secrets.NETLIFY_DEPLOY_HOOK }}
