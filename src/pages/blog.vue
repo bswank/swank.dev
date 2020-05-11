@@ -3,11 +3,7 @@
     <section>
       <h1><span>Weblog</span></h1>
       <div class="posts">
-        <PostItem
-          v-for="post in $page.allPost.edges"
-          :key="post.node.id"
-          :post="post.node"
-        />
+        <PostItem v-for="post in posts" :key="post.id" :post="post" />
       </div>
     </section>
   </Layout>
@@ -33,6 +29,17 @@ export default {
         content: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`
       }
     ]
+  },
+  data() {
+    return {
+      posts: []
+    }
+  },
+  created() {
+    console.log(process.env.NODE_ENV)
+    this.posts = this.$page.allPost.edges
+      .map(e => e.node)
+      .filter(e => new Date(e.date) <= new Date())
   }
 }
 </script>
