@@ -10,7 +10,7 @@ I'm a developer living in Lancaster, Pennsylvania – a cool little city in the 
 
 ## Work & Tech
 
-I ~~work at [Spacebase](https://spacebaseapp.com) as a software engineer~~ was recently laid off due to effects of COVID-19 and am looking for my next full-time gig (as well as I'm cooking up a few things on the side).
+I ~~work at [Spacebase](https://spacebaseapp.com) as a software engineer~~ was recently laid off due to effects of COVID-19 and am looking for my next full-time gig (and cooking up a few things on the side).
 
 At work, I ~~use~~ used Python & Django on AWS with PostgreSQL. When I'm not working, I write JavaScript with nifty tech like Netlify, Vue.js, AWS Lambda, and MongoDB.
 
