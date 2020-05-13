@@ -16,4 +16,4 @@ At work, I ~~use~~ used Python & Django on AWS with PostgreSQL. When I'm not wor
 
 ## Reach Out
 
-You can get in touch by reaching out via email at brianswank at gmail or on [Twitter](https://twitter.com/briansw). I'm currently looking for a new full-time gig!
+You can get in touch by reaching out via email at brianswank at gmail or on [Twitter](https://twitter.com/briansw).
