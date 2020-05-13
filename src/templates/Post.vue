@@ -30,7 +30,7 @@ export default {
       meta: [
         {
           property: 'og:title',
-          content: `${this.$page.post.title} ${this.$page.post.tags.join(' ')}`
+          content: this.$page.post.title
         },
         {
           property: 'og:description',
