@@ -16,7 +16,7 @@ I had to step up and find a way to support us, so I did three things that I'd li
 
 ### Work
 
-The first thing I did was work. That's not a simple thing to do. Finding a decent job was really challenging. I was able to leverage my military service to get a military-specific internship at a bank where I worked for 12 weeks before ending the internetship. At the end, I only had 12 weeks of banking experience, so the only department there that would hire me on full time was the call center, where folks call in to yell and complain about their fees and mortgage escrow.
+The first thing I did was work. That's not a simple thing to do. Finding a decent job was really challenging. I was able to leverage my military service to get a military-specific internship at a bank where I worked for 12 weeks before ending the internship. At the end, I only had 12 weeks of banking experience, so the only department there that would hire me on full time was the call center, where folks call in to yell and complain about their fees and mortgage escrow.
 
 That would probably actually make for a decent podcast..
 
@@ -28,7 +28,7 @@ I knew I needed some additional income, but even more than that, I needed someth
 
 I've always had a knack for bettering my own situation. Whether it's fixing something up to sell so I can get a better one of that thing, or finding a shortcut in a college class, I was always hacking.
 
-Ever since I was 12 and read CSS: The Missing Manaul cover-to-cover I've had an interest in web development, but I got discouraged as a kid and gave up trying to code after some failed attempts at making "Web 2.0" websites with dynamic content and nifty shadows.
+Ever since I was 12 and read CSS: The Missing Manual cover-to-cover I've had an interest in web development, but I got discouraged as a kid and gave up trying to code after some failed attempts at making "Web 2.0" websites with dynamic content and nifty shadows.
 
 My job was fine and the phone repairs were helping to pay the bills, but I wanted so much more out of my career, so I hit up Udemy and Team Treehouse, and Wes Bos, and learned everything I could about full-stack JavaScript.
 
@@ -67,17 +67,17 @@ I believe I'm a whole bunch of things that make me a great fit for this role.
 - I can make technically-challenging concepts simple.
 - I love writing documentation.
 - I love making things for developers.
-- I take criticsm well and am always looking for help improving.
+- I take criticism well and am always looking for help improving.
 - I don't take myself too seriously.
 - I love and enjoy writing modern JavaScript and CSS.
-- I think ahead and try to make sure my actions' 2nd and 3rd order consquences will reflect well on today's work.
+- I think ahead and try to make sure my actions' 2nd and 3rd order consequences will reflect well on today's work.
 - I am empathetic and caring.
 - I have solid communication skills.
 - I have experience working remotely and on very small teams.
 - I can contribute at a high level to organizational and project direction.
 - I love and know good UX and UI.
 - I can bring a design to life with the same finesse and love that was used to design it.
-- I can extrapolate on a design and bring more to life than was originally prescripted.
+- I can extrapolate on a design and bring more to life than was originally intended.
 - I have a strong attention to detail that was driven into the depths of my being over 6 years in the Army.
 - I have a love for Canada.
 - I have a desire to be helpful.
