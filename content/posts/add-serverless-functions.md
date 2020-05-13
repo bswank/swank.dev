@@ -64,6 +64,10 @@ exports.handler = async (event, context) => {
 1. Start your dev server by running `netlify dev`. You may need to [choose or configure](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#netlifytoml-dev-block) a start command.
 2. Visit [http://localhost:8888/.netlify/functions/testy](http://localhost:8888/.netlify/functions/testy)
 
+### Deploy
+
+If your local function is working correctly, go ahead and deploy it to Netlify with `netlify deploy`!
+
 ---
 
 Thanks for reading! Need some help? Feel free to [reach out](https://twitter.com/briansw).
