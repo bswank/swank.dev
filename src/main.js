@@ -15,7 +15,7 @@ export default function(Vue, { head }) {
     },
     {
       name: 'twitter:image',
-      content: '/twitter-card-logo.png'
+      content: 'https://swank.dev/twitter-card-logo.png'
     }
   )
 
