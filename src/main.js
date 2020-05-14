@@ -12,6 +12,10 @@ export default function(Vue, { head }) {
     {
       name: 'twitter:creator',
       content: '@briansw'
+    },
+    {
+      name: 'twitter:image',
+      content: '/twitter-card-logo.png'
     }
   )
 
