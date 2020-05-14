@@ -26,7 +26,17 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
-      description: this.$page.post.descriptmion
+      description: this.$page.post.description,
+      meta: [
+        {
+          property: 'og:title',
+          content: this.$page.post.title
+        },
+        {
+          property: 'og:description',
+          content: this.$page.post.description
+        }
+      ]
     }
   },
   data() {
