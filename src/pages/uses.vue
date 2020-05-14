@@ -10,17 +10,7 @@ import { processHeadings } from '@/utils/utils'
 export default {
   metaInfo: {
     title: 'Uses (My Gear)',
-    description: `Inspired by the tech community's pattern of /uses pages, here's the gear I use on a daily basis.`,
-    meta: [
-      {
-        property: 'og:title',
-        content: 'Uses (My Gear) - Swank.dev'
-      },
-      {
-        property: 'og:description',
-        content: `Inspired by the tech community's pattern of /uses pages, here's the gear I use on a daily basis.`
-      }
-    ]
+    description: `Inspired by the tech community's pattern of /uses pages, here's the gear I use on a daily basis.`
   },
   created() {
     this.content = processHeadings(this.$page.pageContent.content)

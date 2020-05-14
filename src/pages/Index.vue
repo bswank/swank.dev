@@ -10,17 +10,7 @@ import { processHeadings } from '@/utils/utils'
 export default {
   metaInfo: {
     title: 'Introductions',
-    description: `Hey, my name is Brian Swank. I'm a software engineer for Spacebase and I live in Lancaster, Pennsylvania.`,
-    meta: [
-      {
-        property: 'og:title',
-        content: 'Introductions - Swank.dev'
-      },
-      {
-        property: 'og:description',
-        content: `Hey, my name is Brian Swank. I'm a software engineer for Spacebase and I live in Lancaster, Pennsylvania.`
-      }
-    ]
+    description: `Hey, my name is Brian Swank. I'm a software engineer for Spacebase and I live in Lancaster, Pennsylvania.`
   },
   created() {
     this.content = processHeadings(this.$page.pageContent.content)
