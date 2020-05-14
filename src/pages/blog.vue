@@ -16,22 +16,26 @@ export default {
   components: {
     PostItem
   },
-  metaInfo: {
-    title: 'Weblog',
-    description: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`,
-    meta: [
-      {
-        property: 'og:title',
-        content: 'Weblog - Swank.dev'
-      },
-      {
-        property: 'og:description',
-        content: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`
-      }
-    ]
+  metaInfo() {
+    return {
+      title: this.title,
+      description: this.description,
+      meta: [
+        {
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          property: 'og:description',
+          content: this.description
+        }
+      ]
+    }
   },
   data() {
     return {
+      title: 'Weblog',
+      description: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`,
       posts: []
     }
   },
