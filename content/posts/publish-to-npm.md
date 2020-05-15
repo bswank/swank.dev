@@ -1,7 +1,7 @@
 ---
-title: 'How to Publish a Package to NPM (in 5 Minutes)'
+title: 'Publish a Package to NPM'
 date: 2020-05-11
-slug: 'publishing-to-npm'
+slug: 'publish-to-npm'
 description: 'Publish your first package to NPM in 5 minutes or less.'
 category: 'Tutorial'
 tags: ['#npm', '#javascript']
@@ -79,4 +79,4 @@ Now that your code is available on NPM, here are a few things you can and should
 
 Need some help or want to share your newly-uploaded NPM package? Feel free to [reach out](https://twitter.com/briansw).
 
-See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.dev/blob/master/content/posts/add-serverless-functions.md) on GitHub.
+See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.dev/blob/master/content/posts/publish-to-npm.md) on GitHub.
