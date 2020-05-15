@@ -7,7 +7,7 @@ category: 'Tutorial'
 tags: ['#mongodb', '#mongoose', '#node']
 ---
 
-There are a bunch of great services that make search really simple, but adding simple fuzzy text search to a Mongoose model is a quick & easy win.
+There are a bunch of great services that make search really simple, but adding simple fuzzy text search to a Mongoose model is a quick & easy win for when those services are overkill.
 
 ## Prerequisites
 
