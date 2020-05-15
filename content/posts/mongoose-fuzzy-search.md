@@ -1,6 +1,6 @@
 ---
 title: 'Implement Fuzzy Text Search with Mongoose'
-date: 2020-05-16
+date: 2020-05-15
 slug: 'mongoose-fuzzy-search'
 description: 'Add simple fuzzy text search to your Mongoose model'
 category: 'Tutorial'
