@@ -5,5 +5,5 @@
 [build]
   publish = 'dist'
   command = 'npm run build'
-  functions = 'api/'
+  functions = 'functions/'
 

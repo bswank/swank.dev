@@ -35,17 +35,29 @@ export default {
         {
           property: 'og:description',
           content: this.$page.post.description
+        },
+        {
+          property: 'og:image',
+          content: this.ogimage
         }
       ]
     }
   },
   data() {
     return {
-      tags: ''
+      tags: '',
+      ogimage: null
     }
   },
   created() {
     this.tags = formatList(this.$page.post.tags)
+    this.ogimage = `${
+      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(
+      this.$page.post.title
+    )}&category=${encodeURIComponent(
+      this.$page.post.category
+    )}&tags=${encodeURIComponent(this.tags)}`
     this.content = processHeadings(this.$page.post.content)
   }
 }
