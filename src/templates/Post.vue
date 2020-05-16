@@ -39,6 +39,14 @@ export default {
         {
           property: 'og:image',
           content: this.ogimage
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:image',
+          content: this.ogimage
         }
       ]
     }
