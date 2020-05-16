@@ -66,4 +66,4 @@ That's it!
 
 Need some help? Want to chat? Feel free to [reach out](https://twitter.com/briansw).
 
-See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.dev/blob/master/content/posts/deploy-vue-to-cloudflare-workers.md) on GitHub.
+See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.deb/edit/master/content/posts/deploy-vue-to-cloudflare-workers.md) on GitHub.

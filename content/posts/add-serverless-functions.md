@@ -72,4 +72,4 @@ If your local function is working correctly, go ahead and deploy it to Netlify w
 
 Thanks for reading! Need some help? Feel free to [reach out](https://twitter.com/briansw).
 
-See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.dev/blob/master/content/posts/add-serverless-functions.md) on GitHub.
+See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.deb/edit/master/content/posts/add-serverless-functions.md) on GitHub.

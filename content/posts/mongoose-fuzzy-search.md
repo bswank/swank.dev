@@ -60,4 +60,4 @@ To learn more about how to use `mongoose-fuzzy-searching` with existing data, it
 
 Need some help? Feel free to [reach out](https://twitter.com/briansw).
 
-See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.dev/blob/master/content/posts/mongoose-fuzzy-search.md) on GitHub.
+See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.deb/edit/master/content/posts/mongoose-fuzzy-search.md) on GitHub.
