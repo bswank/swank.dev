@@ -41,10 +41,13 @@ export default {
   },
   data() {
     return {
-      tags: ''
+      tags: '',
+      ogimage: null
     }
   },
   created() {
+    // this.ogimage =
+    console.log(process.env.URL)
     this.tags = formatList(this.$page.post.tags)
     this.content = processHeadings(this.$page.post.content)
   }
