@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       title: 'Brian Swank - Software Engineer',
-      description: `Hey, my name is Brian Swank. I'm a software engineer for Spacebase and I live in Lancaster, Pennsylvania.`
+      description: `Hey, my name is Brian Swank. I'm a software engineer looking for my next full-time gig and I live in Lancaster, Pennsylvania.`
     }
   },
   created() {
