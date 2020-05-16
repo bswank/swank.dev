@@ -1,13 +1,14 @@
 ---
 id: 's1oede'
-description: "Hey, my name is Brian Swank. I'm a full-stack software developer and I live in Lancaster, Pennsylvania."
+title: 'Brian Swank - Software Engineer'
+description: "Hey, my name is Brian Swank. I'm a full-stack software engineer and I live in Lancaster, Pennsylvania."
 ---
 
 # Hello.
 
 ## My name is Brian Swank.
 
-I'm a developer living in Lancaster, Pennsylvania – a cool little city in the heart of Amish Country. I live here with my wife, [Amy](https://instagram.com/amynswank). We also have a cat named [Moe](https://www.instagram.com/explore/tags/moethehousepanther/), but we're not cat parents. He has cat parents (I'm assuming). We refer to him as "Moe, the house panther" for short.
+I'm a software engineer living in Lancaster, Pennsylvania – a cool little city in the heart of Amish Country. I live here with my wife, [Amy](https://instagram.com/amynswank). We also have a cat named [Moe](https://www.instagram.com/explore/tags/moethehousepanther/), but we're not cat parents. He has cat parents (I'm assuming). We refer to him as "Moe, the house panther" for short.
 
 ## Work & Tech
 

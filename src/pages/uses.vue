@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      title: 'Uses (My Gear)',
+      title: this.$page.pageContent.title,
       description: this.$page.pageContent.description,
       ogimage: null
     }

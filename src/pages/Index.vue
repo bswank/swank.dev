@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      title: 'Brian Swank - Software Engineer',
+      title: this.$page.pageContent.title,
       description: this.$page.pageContent.description,
       ogimage: null
     }
