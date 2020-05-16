@@ -2,6 +2,7 @@
   "name": "functions",
   "private": true,
   "dependencies": {
+    "bufferutil": "^4.0.1",
     "chrome-aws-lambda": "^3.0.4",
     "puppeteer-core": "^3.0.4"
   }
