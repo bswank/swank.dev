@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       tags: '',
-      ogimage: null
+      ogimage: ''
     }
   },
   created() {

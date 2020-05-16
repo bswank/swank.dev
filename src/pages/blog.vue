@@ -28,6 +28,10 @@ export default {
         {
           property: 'og:description',
           content: this.description
+        },
+        {
+          property: 'og:image',
+          content: this.ogimage
         }
       ]
     }
@@ -35,11 +39,16 @@ export default {
   data() {
     return {
       title: 'Weblog',
-      description: `Remember when blogs were weblogs and blogspot was the newest, coolest thing? Crazy.`,
+      description:
+        'Remember when blogs were weblogs and blogspot was the coolest thing? Crazy.',
+      ogimage: '',
       posts: []
     }
   },
   created() {
+    this.ogimage = `${
+      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}`
     this.posts = this.$page.allPost.edges
       .map(e => e.node)
       .filter(e => (this.prod ? new Date(e.date) <= new Date() : e))
