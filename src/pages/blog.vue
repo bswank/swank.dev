@@ -48,7 +48,9 @@ export default {
   created() {
     this.ogimage = `${
       this.prod ? 'https://swank.dev' : 'http://localhost:8888'
-    }/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}`
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(
+      this.description
+    )}&category=${encodeURIComponent(this.title)}`
     this.posts = this.$page.allPost.edges
       .map(e => e.node)
       .filter(e => (this.prod ? new Date(e.date) <= new Date() : e))
