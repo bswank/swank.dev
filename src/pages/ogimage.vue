@@ -4,9 +4,7 @@
       <span>{{ $route.query.category }}</span>
     </h2>
     <h1>
-      <span :class="{ 'blog-post': $route.query['blog-post'] }">{{
-        $route.query.title
-      }}</span>
+      <span>{{ $route.query.title }}</span>
     </h1>
     <h2 style="flex: 1;">
       <span>{{ $route.query.tags }}</span>
@@ -39,11 +37,7 @@ export default {
     line-height: 1.4;
 
     span {
-      font-size: 1.5em;
-
-      &.blog-post {
-        font-size: 2em;
-      }
+      font-size: 1.8em;
     }
   }
 
