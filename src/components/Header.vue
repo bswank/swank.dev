@@ -1,8 +1,6 @@
 <template>
   <header>
-    <div class="logo">
-      <g-link to="/">BS</g-link>
-    </div>
+    <Logo style="flex: 1;" />
     <nav>
       <ul>
         <li>
@@ -20,23 +18,19 @@
 </template>
 
 <script>
-export default {}
+import Logo from '@/components/Logo.vue'
+
+export default {
+  components: {
+    Logo
+  }
+}
 </script>
 
 <style lang="scss">
 header {
   margin: var(--big-space) var(--big-space) 0 var(--big-space);
   display: flex;
-
-  .logo {
-    flex: 1;
-
-    a {
-      line-height: 1;
-      font-weight: 700;
-      font-size: 2.5em;
-    }
-  }
 
   nav {
     margin: auto 0;
