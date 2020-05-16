@@ -35,6 +35,10 @@ export default {
         {
           property: 'og:description',
           content: this.$page.post.description
+        },
+        {
+          property: 'og:image',
+          content: this.ogimage
         }
       ]
     }
@@ -46,9 +50,14 @@ export default {
     }
   },
   created() {
-    // this.ogimage =
-    console.log(process.env)
     this.tags = formatList(this.$page.post.tags)
+    this.ogimage = `${
+      window.location.origin
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(
+      this.$page.post.title
+    )}&category=${encodeURIComponent(
+      this.$page.post.category
+    )}&tags=${encodeURIComponent(this.tags)}`
     this.content = processHeadings(this.$page.post.content)
   }
 }
