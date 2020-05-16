@@ -90,6 +90,7 @@ query Post ($path: String!) {
     category
     description
     tags
+    slug
     date (format: "MMMM DD, YYYY")
   }
 }
