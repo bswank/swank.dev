@@ -37,7 +37,7 @@ export default {
     line-height: 1.4;
 
     span {
-      font-size: 2.2em;
+      font-size: 2.1em;
     }
   }
 
