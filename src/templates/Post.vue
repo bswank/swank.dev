@@ -52,7 +52,7 @@ export default {
   created() {
     this.tags = formatList(this.$page.post.tags)
     this.ogimage = `${
-      window.location.origin
+      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
     }/.netlify/functions/ogimage?title=${encodeURIComponent(
       this.$page.post.title
     )}&category=${encodeURIComponent(
