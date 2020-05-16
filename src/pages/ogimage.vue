@@ -36,7 +36,7 @@ export default {
   padding: 75px;
 
   h1 {
-    line-height: 1.4;
+    line-height: 1.3;
 
     span {
       font-size: 2em;
