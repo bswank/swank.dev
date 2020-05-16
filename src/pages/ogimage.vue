@@ -6,7 +6,7 @@
     <h1>
       <span>{{ $route.query.title }}</span>
     </h1>
-    <h2 style="flex: 1;">
+    <h2 v-if="$route.query && $route.query.tags" style="flex: 1;">
       <span v-for="tag in $route.query.tags.split(',')" :key="tag">
         #{{ tag }}&nbsp;
       </span>
