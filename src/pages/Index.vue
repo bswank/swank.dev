@@ -23,6 +23,10 @@ export default {
           content: this.description
         },
         {
+          property: 'og:url',
+          content: this.url
+        },
+        {
           property: 'og:image',
           content: this.ogimage
         }
@@ -33,7 +37,8 @@ export default {
     return {
       title: '',
       description: '',
-      ogimage: ''
+      ogimage: '',
+      url: ''
     }
   },
   created() {
@@ -45,6 +50,7 @@ export default {
     }/.netlify/functions/ogimage?title=${encodeURIComponent(
       this.description
     )}&category=${encodeURIComponent(this.title)}`
+    this.url = `${this.baseURL}/`
   }
 }
 </script>

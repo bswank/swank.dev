@@ -30,6 +30,10 @@ export default {
           content: this.description
         },
         {
+          property: 'og:url',
+          content: this.url
+        },
+        {
           property: 'og:image',
           content: this.ogimage
         }
@@ -42,6 +46,7 @@ export default {
       description:
         'Remember when blogs were weblogs and blogspot was the coolest thing? Crazy.',
       ogimage: '',
+      url: '',
       posts: []
     }
   },
@@ -54,6 +59,7 @@ export default {
     this.posts = this.$page.allPost.edges
       .map(e => e.node)
       .filter(e => (this.prod ? new Date(e.date) <= new Date() : e))
+    this.url = `${this.baseURL}/blog/`
   }
 }
 </script>

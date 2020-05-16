@@ -25,16 +25,20 @@ import { processHeadings, formatList } from '@/utils/utils'
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title,
-      description: this.$page.post.description,
+      title: this.title,
+      description: this.description,
       meta: [
         {
           property: 'og:title',
-          content: this.$page.post.title
+          content: this.title
         },
         {
           property: 'og:description',
-          content: this.$page.post.description
+          content: this.description
+        },
+        {
+          property: 'og:url',
+          content: this.url
         },
         {
           property: 'og:image',
@@ -54,19 +58,25 @@ export default {
   data() {
     return {
       tags: '',
-      ogimage: ''
+      title: '',
+      description: '',
+      ogimage: '',
+      url: ''
     }
   },
   created() {
     this.tags = formatList(this.$page.post.tags)
+    this.content = processHeadings(this.$page.post.content)
+    this.title = this.$page.post.title
+    this.description = this.$page.post.description
     this.ogimage = `${
-      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
+      this.baseURL
     }/.netlify/functions/ogimage?title=${encodeURIComponent(
-      this.$page.post.title
+      this.title
     )}&category=${encodeURIComponent(
       this.$page.post.category
     )}&tags=${encodeURIComponent(this.tags)}`
-    this.content = processHeadings(this.$page.post.content)
+    this.url = `${this.baseURL}/blog/${this.$page.post.slug}/`
   }
 }
 </script>
