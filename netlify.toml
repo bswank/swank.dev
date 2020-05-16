@@ -4,7 +4,6 @@
 
 [build]
   publish = 'dist'
-  prebuild = 'netlify-lambda install'
   command = 'npm run build'
   functions = 'functions/'
 
