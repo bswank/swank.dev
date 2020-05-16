@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer-core')
 
 const wait = (amount = 0) => new Promise(resolve => setTimeout(resolve, amount))
 
-// const cached = new Map()
+const cached = new Map()
 
 const localChromePath =
   '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
@@ -20,8 +20,8 @@ async function getOptions(isDev) {
 }
 
 async function getScreenshot(url, isDev) {
-  // const cachedImage = cached.get(url)
-  // if (cachedImage) return cachedImage
+  const cachedImage = cached.get(url)
+  if (cachedImage) return cachedImage
   const options = await getOptions(isDev)
   const browser = await puppeteer.launch(options)
   const page = await browser.newPage()
@@ -30,7 +30,7 @@ async function getScreenshot(url, isDev) {
   await wait(1000)
   const buffer = await page.screenshot({ type: 'png' })
   const base64Image = buffer.toString('base64')
-  // cached.set(url, base64Image)
+  cached.set(url, base64Image)
   return base64Image
 }
 
