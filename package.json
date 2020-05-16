@@ -5,8 +5,7 @@
     "build": "gridsome build",
     "dev": "gridsome develop",
     "explore": "gridsome explore",
-    "lint": "vue-cli-service lint",
-    "prebuild": "netlify-lambda install"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.2.3",
