@@ -65,7 +65,7 @@ export default {
       this.$page.post.title
     )}&category=${encodeURIComponent(
       this.$page.post.category
-    )}&tags=${encodeURIComponent(this.tags)}`
+    )}&tags=${encodeURIComponent(this.tags)}&blog-post=yup`
     this.content = processHeadings(this.$page.post.content)
   }
 }
