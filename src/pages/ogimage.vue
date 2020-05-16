@@ -39,7 +39,7 @@ export default {
     line-height: 1.4;
 
     span {
-      font-size: 1.7em;
+      font-size: 1.5em;
 
       &.blog-post {
         font-size: 2em;
