@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: 'Swank.dev',
+  siteName: 'swank.dev',
   siteUrl: 'https://swank.dev/',
   siteDescription:
     'The tiny corner of the internet owned and operated by Brian Swank.',
