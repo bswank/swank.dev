@@ -78,5 +78,3 @@ Now that your code is available on NPM, here are a few things you can and should
 ---
 
 Need some help or want to share your newly-uploaded NPM package? Feel free to [reach out](https://twitter.com/briansw).
-
-See something needing correction? Feel free to [edit this post](https://github.com/bswank/swank.deb/edit/master/content/posts/publish-to-npm.md) on GitHub.
