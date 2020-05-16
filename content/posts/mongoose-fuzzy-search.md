@@ -54,7 +54,7 @@ Given an empty query, our `fuzzySearch` method will act just like a `find` call,
 
 ## Further Reading
 
-To learn more about how to use `mongoose-fuzzy-searching` with existing data, it's various options, or with more complex `mongoose.find()` calls, check out the [readme on NPM](https://www.npmjs.com/package/mongoose-fuzzy-searching).
+To learn more about how to use `mongoose-fuzzy-searching` with existing data, it's various options, or with more complex `find()` calls, check out the [readme on NPM](https://www.npmjs.com/package/mongoose-fuzzy-searching).
 
 ---
 
