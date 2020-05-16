@@ -1,0 +1,9 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "main": "ogimage.js",
+  "dependencies": {
+    "chrome-aws-lambda": "^3.0.4",
+    "puppeteer-core": "^3.0.4"
+  }
+}
