@@ -1,5 +1,6 @@
 ---
 id: 's1oede'
+description: "Hey, my name is Brian Swank. I'm a full-stack software developer and I live in Lancaster, Pennsylvania."
 ---
 
 # Hello.

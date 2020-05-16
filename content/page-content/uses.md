@@ -1,5 +1,6 @@
 ---
 id: '3e5vfzx'
+description: "Inspired by the tech community's pattern of /uses pages, here's the gear I use on a daily basis."
 ---
 
 # /uses

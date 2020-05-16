@@ -20,6 +20,10 @@ export default {
         {
           property: 'og:description',
           content: this.description
+        },
+        {
+          property: 'og:image',
+          content: this.ogimage
         }
       ]
     }
@@ -27,10 +31,14 @@ export default {
   data() {
     return {
       title: 'Brian Swank - Software Engineer',
-      description: `Hey, my name is Brian Swank. I'm a software engineer looking for my next full-time gig and I live in Lancaster, Pennsylvania.`
+      description: this.$page.pageContent.description,
+      ogimage: null
     }
   },
   created() {
+    this.ogimage = `${
+      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}`
     this.content = processHeadings(this.$page.pageContent.content)
   }
 }

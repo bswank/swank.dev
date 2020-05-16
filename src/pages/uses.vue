@@ -20,6 +20,10 @@ export default {
         {
           property: 'og:description',
           content: this.description
+        },
+        {
+          property: 'og:image',
+          content: this.ogimage
         }
       ]
     }
@@ -27,10 +31,14 @@ export default {
   data() {
     return {
       title: 'Uses (My Gear)',
-      description: `Inspired by the tech community's pattern of /uses pages, here's the gear I use on a daily basis.`
+      description: this.$page.pageContent.description,
+      ogimage: null
     }
   },
   created() {
+    this.ogimage = `${
+      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}`
     this.content = processHeadings(this.$page.pageContent.content)
   }
 }
