@@ -37,12 +37,14 @@ export default {
     }
   },
   created() {
-    this.ogimage = `${
-      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
-    }/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}`
     this.content = processHeadings(this.$page.pageContent.content)
     this.title = this.$page.pageContent.title
     this.description = this.$page.pageContent.description
+    this.ogimage = `${
+      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
+    }/.netlify/functions/ogimage?title=${encodeURIComponent(
+      this.description
+    )}&category=${encodeURIComponent(this.title)}`
   }
 }
 </script>
