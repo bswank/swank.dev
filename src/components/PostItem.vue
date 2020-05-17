@@ -1,9 +1,7 @@
 <template>
   <div class="post">
     <div class="date">
-      <span>
-        {{ post.date }}{{ post.category ? ` // ${post.category}` : '' }}
-      </span>
+      <span>{{ post.date }}{{ post.category ? ` // ${post.category}` : '' }}</span>
     </div>
     <h2>
       <g-link :to="post.path" class="title">
@@ -17,7 +15,7 @@
 </template>
 
 <script>
-import { formatList } from '@/utils/utils'
+import { formatTags } from '@/utils/utils'
 
 export default {
   props: {
@@ -32,7 +30,7 @@ export default {
     }
   },
   created() {
-    this.tags = formatList(this.post.tags)
+    this.tags = formatTags(this.post.tags)
   }
 }
 </script>

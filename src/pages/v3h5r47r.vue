@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { processHeadings } from '@/utils/utils'
+import { formatHeadings } from '@/utils/utils'
 
 export default {
   metaInfo: {
@@ -18,7 +18,7 @@ export default {
     ]
   },
   created() {
-    this.content = processHeadings(this.$page.pageContent.content)
+    this.content = formatHeadings(this.$page.pageContent.content)
   }
 }
 </script>

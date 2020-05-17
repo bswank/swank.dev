@@ -7,8 +7,7 @@ const wait = (amount = 0) => new Promise(resolve => setTimeout(resolve, amount))
 
 const cached = new Map()
 
-const localChromePath =
-  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+const localChromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 async function getOptions(isDev) {
   return {

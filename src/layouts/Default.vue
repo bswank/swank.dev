@@ -2,12 +2,7 @@
   <main role="main">
     <div class="wrapper">
       <Header />
-      <div
-        :class="[
-          'router',
-          { spacious: $route.path === '/blog' || $route.path === '/blog/' }
-        ]"
-      >
+      <div :class="['router', { spacious: $route.path === '/blog' || $route.path === '/blog/' }]">
         <slot />
       </div>
       <Footer />
@@ -29,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 main {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { processHeadings } from '@/utils/utils'
+import { formatHeadings } from '@/utils/utils'
 
 export default {
   metaInfo() {
@@ -41,14 +41,10 @@ export default {
     }
   },
   created() {
-    this.content = processHeadings(this.$page.pageContent.content)
+    this.content = formatHeadings(this.$page.pageContent.content)
     this.title = this.$page.pageContent.title
     this.description = this.$page.pageContent.description
-    this.ogimage = `${
-      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
-    }/.netlify/functions/ogimage?title=${encodeURIComponent(
-      this.description
-    )}&category=${encodeURIComponent(this.title)}`
+    this.ogimage = `${this.prod ? 'https://swank.dev' : 'http://localhost:8888'}/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}&category=${encodeURIComponent(this.title)}`
     this.url = `${this.baseURL}/uses/`
   }
 }

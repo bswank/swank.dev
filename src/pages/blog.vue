@@ -43,22 +43,15 @@ export default {
   data() {
     return {
       title: 'Weblog',
-      description:
-        'Remember when blogs were weblogs and blogspot was the coolest thing? Crazy.',
+      description: 'Remember when blogs were weblogs and blogspot was the coolest thing? Crazy.',
       ogimage: '',
       url: '',
       posts: []
     }
   },
   created() {
-    this.ogimage = `${
-      this.prod ? 'https://swank.dev' : 'http://localhost:8888'
-    }/.netlify/functions/ogimage?title=${encodeURIComponent(
-      this.description
-    )}&category=${encodeURIComponent(this.title)}`
-    this.posts = this.$page.allPost.edges
-      .map(e => e.node)
-      .filter(e => (this.prod ? new Date(e.date) <= new Date() : e))
+    this.ogimage = `${this.prod ? 'https://swank.dev' : 'http://localhost:8888'}/.netlify/functions/ogimage?title=${encodeURIComponent(this.description)}&category=${encodeURIComponent(this.title)}`
+    this.posts = this.$page.allPost.edges.map(e => e.node).filter(e => (this.prod ? new Date(e.date) <= new Date() : e))
     this.url = `${this.baseURL}/blog/`
   }
 }

@@ -46,10 +46,7 @@ export default function(Vue, { head }) {
     data() {
       return {
         content: '',
-        baseURL:
-          process.env.NODE_ENV === 'production'
-            ? 'https://swank.dev'
-            : 'http://localhost:8888',
+        baseURL: process.env.NODE_ENV === 'production' ? 'https://swank.dev' : 'http://localhost:8888',
         prod: process.env.NODE_ENV === 'production'
       }
     }
