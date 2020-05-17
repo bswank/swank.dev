@@ -70,6 +70,7 @@ pre[class*='language-'] {
 .token.doctype,
 .token.cdata {
   color: slategray;
+  color: var(--syntax-f);
 }
 
 .token.punctuation {
@@ -98,6 +99,7 @@ pre[class*='language-'] {
 .token.builtin,
 .token.inserted {
   color: #690;
+  color: var(--primary);
 }
 
 .token.operator,
