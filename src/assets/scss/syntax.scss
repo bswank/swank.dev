@@ -148,6 +148,7 @@ pre[class*='language-'] {
 
 code[class*='language-'],
 pre[class*='language-'] {
+  font-family: 'Overpass Mono', monospace;
   background-color: var(--alt-color);
   text-shadow: none;
   padding: 0;
@@ -159,13 +160,14 @@ pre[class*='language-'] {
   padding: 2px 5px;
   margin: 0;
   font-weight: normal;
-  font-size: 0.9rem;
 }
 
 pre[class*='language-'] {
-  background: var(--alt--overcooked);
   padding: calc(var(--little-space) - 5px);
-  box-shadow: 4px 4px 0 -2px var(--alt--overcooked-and-sunburned);
+  background-color: #f7f7f7;
+  border: 1px solid var(--alt--overcooked);
+  box-shadow: 1px 1px 0 1px var(--alt--overcooked);
+  border-radius: 2px;
 
   code {
     color: var(--primary);
