@@ -19,7 +19,6 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@bswank/design": "^0.3.0",
     "@vue/cli-plugin-eslint": "^4.3.1",
     "@vue/cli-service": "^4.3.1",
     "@vue/eslint-config-prettier": "^6.0.0",
