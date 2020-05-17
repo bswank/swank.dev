@@ -1,0 +1,20 @@
+:root {
+  --big-space: 50px;
+  --little-space: 25px;
+
+  --primary: #253745;
+  --alt: #ececec;
+  --accent: #facf90;
+
+  --syntax-b: #55456a;
+  --syntax-c: #265985;
+  --syntax-d: #80475e;
+  --syntax-e: #567666;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --big-space: 30px;
+    --little-space: 15px;
+  }
+}

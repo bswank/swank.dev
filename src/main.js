@@ -1,5 +1,6 @@
 import DefaultLayout from '~/layouts/Default.vue'
-import '@bswank/design'
+import 'normalize.css'
+import '~/assets/scss/tokens.scss'
 import '~/assets/scss/global.scss'
 import '~/assets/scss/syntax.scss'
 
