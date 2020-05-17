@@ -5,11 +5,11 @@
 }
 
 *::-moz-selection {
-  background-color: #dcdcdc !important;
+  background-color: var(--alt--overcooked) !important;
 }
 
 *::selection {
-  background-color: #dcdcdc !important;
+  background-color: var(--alt--overcooked) !important;
 }
 
 body {

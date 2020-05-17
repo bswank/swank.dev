@@ -153,7 +153,7 @@ pre[class*='language-'] {
 }
 
 :not(pre) > code[class*='language-'] {
-  background-color: #dcdcdc;
+  background-color: var(--alt--overcooked);
   padding: 2px 5px;
   margin: 0;
   font-weight: normal;
@@ -161,8 +161,9 @@ pre[class*='language-'] {
 }
 
 pre[class*='language-'] {
-  border: 1px dashed var(--primary);
-  padding: var(--little-space);
+  background: var(--alt--overcooked);
+  padding: calc(var(--little-space) - 5px);
+  box-shadow: 4px 4px 0 -2px var(--alt--overcooked-and-sunburned);
 
   code {
     color: var(--primary);
