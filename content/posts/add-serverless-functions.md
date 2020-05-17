@@ -4,7 +4,7 @@ date: 2020-05-07
 slug: 'add-serverless-functions'
 description: 'Quickly add a serverless backend to any static site, including React, Vue, or other SPA static sites.'
 category: 'Tutorial'
-tags: ['#netlify', '#serverless', '#node']
+tags: ['netlify', 'serverless', 'node']
 ---
 
 Adding just a bit of backend functionality to your Netlify-hosted static site is a perfect use-case for serverless functions. Let's get up and running!

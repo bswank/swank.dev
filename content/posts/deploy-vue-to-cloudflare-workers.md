@@ -4,7 +4,7 @@ date: 2020-05-13
 slug: 'deploy-vue-to-cloudflare-workers'
 description: 'Deploy your Vue app to the edges of the web with Cloudflare Workers'
 category: 'Tutorial'
-tags: ['#vue', '#cloudflare-workers']
+tags: ['vue', 'cloudflare', 'workers']
 ---
 
 Cloudflare Workers is probably the easiest way to deploy super fast serverless code to edge locations around the world. In this post, we'll explore what it takes to deploy a Vue application with Workers (hint: it doesn't take much).

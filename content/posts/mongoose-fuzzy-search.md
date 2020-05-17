@@ -4,7 +4,7 @@ date: 2020-05-15
 slug: 'mongoose-fuzzy-search'
 description: 'Add simple fuzzy text search to your Mongoose model'
 category: 'Tutorial'
-tags: ['#mongodb', '#mongoose', '#node']
+tags: ['mongodb', 'mongoose', 'node']
 ---
 
 There are a bunch of great services that make search really simple, but adding simple fuzzy text search to a Mongoose model is a quick & easy win for when those services are overkill.

@@ -4,7 +4,7 @@ date: 2020-05-11
 slug: 'publish-to-npm'
 description: 'Publish your first package to NPM in 5 minutes or less.'
 category: 'Tutorial'
-tags: ['#npm', '#javascript']
+tags: ['npm', 'javascript']
 ---
 
 Publishing a package to NPM is a quick and efficient way to re-use code across multiple projects.
