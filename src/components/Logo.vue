@@ -9,7 +9,7 @@
   a {
     line-height: 1;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 }
 </style>
