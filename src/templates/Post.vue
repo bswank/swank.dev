@@ -1,12 +1,10 @@
 <template>
   <Layout>
+    <TweetLink :uri="tweetURI" />
     <article>
       <div class="time">
         {{ $page.post.path }}
-        <span>
-          {{ $page.post.date
-          }}{{ $page.post.category ? ` // ${$page.post.category}` : '' }}
-        </span>
+        <span> {{ $page.post.date }}{{ $page.post.category ? ` // ${$page.post.category}` : '' }} </span>
       </div>
       <h1>
         <span>{{ $page.post.title }}</span>
@@ -20,9 +18,13 @@
 </template>
 
 <script>
-import { processHeadings, formatList } from '@/utils/utils'
+import TweetLink from '@/components/TweetLink'
+import { formatHeadings, formatTags } from '@/utils/utils'
 
 export default {
+  components: {
+    TweetLink
+  },
   metaInfo() {
     return {
       title: this.title,
@@ -61,22 +63,18 @@ export default {
       title: '',
       description: '',
       ogimage: '',
-      url: ''
+      url: '',
+      tweetURI: ''
     }
   },
   created() {
-    this.tags = formatList(this.$page.post.tags)
-    this.content = processHeadings(this.$page.post.content)
+    this.tags = formatTags(this.$page.post.tags)
+    this.content = formatHeadings(this.$page.post.content)
     this.title = this.$page.post.title
     this.description = this.$page.post.description
-    this.ogimage = `${
-      this.baseURL
-    }/.netlify/functions/ogimage?title=${encodeURIComponent(
-      this.title
-    )}&category=${encodeURIComponent(
-      this.$page.post.category
-    )}&tags=${encodeURIComponent(this.tags)}`
+    this.ogimage = `${this.baseURL}/.netlify/functions/ogimage?title=${encodeURIComponent(this.title)}&category=${encodeURIComponent(this.$page.post.category)}&tags=${encodeURIComponent(this.tags)}`
     this.url = `${this.baseURL}/blog/${this.$page.post.slug}/`
+    this.tweetURI = `https://twitter.com/intent/tweet?text=${this.title}&url=${this.url}&hashtags=${this.$page.post.tags.join(',')}`
   }
 }
 </script>
