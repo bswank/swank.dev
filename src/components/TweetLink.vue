@@ -18,8 +18,8 @@ export default {
 <style lang="scss">
 .trigger {
   position: fixed;
-  top: 80%;
-  transform: translateY(-80%);
+  top: 75%;
+  transform: translateY(-75%);
   right: 0;
 
   a {
@@ -27,12 +27,12 @@ export default {
     padding: 0;
     line-height: 1;
     cursor: pointer;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotate(180deg);
+    transform: rotate(270deg);
+    transform-origin: bottom right;
     font-weight: 600;
     background-color: var(--accent);
-    padding: 15px 10px;
+    padding: 10px 15px;
+    box-shadow: -2px -2px 0 0px var(--alt--overcooked);
   }
 }
 </style>
