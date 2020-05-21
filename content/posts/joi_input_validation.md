@@ -1,5 +1,5 @@
 ---
-title: 'Implement Input Validation in Node with Joi'
+title: 'Validate Data on a Node Server with Joi'
 date: 2020-05-20
 slug: 'joi-input-validation'
 description: 'Validate client input as soon as it hits your server using Joi'
