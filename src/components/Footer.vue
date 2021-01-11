@@ -1,7 +1,7 @@
 <template>
   <footer>
     <span class="footer-items">
-      &copy; 2020 <a target="_blank" href="https://twitter.com/briansw">Brian Swank</a> / <a target="_blank" href="https://github.com/bswank/swank.dev"> Source</a><span v-if="$route.path.includes('/blog/') && $route.path.length > 6"> / <a target="_blank" :href="editURL"> Edit</a></span>
+      &copy; {{ new Date().getFullYear() }} <a target="_blank" href="https://twitter.com/briansw">Brian Swank</a> / <a target="_blank" href="https://github.com/bswank/swank.dev"> Source</a><span v-if="$route.path.includes('/blog/') && $route.path.length > 6"> / <a target="_blank" :href="editURL"> Edit</a></span>
     </span>
   </footer>
 </template>
